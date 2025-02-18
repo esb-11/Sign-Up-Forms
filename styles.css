@@ -1,0 +1,69 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    background-color: grey;
+    display: flex;
+}
+
+
+.sign-up {
+    flex: 1;
+}
+
+/*  Logo section styles */
+.logo-container {
+    height: 100%;
+    width: fit-content;
+    
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    overflow: clip;
+}
+
+.logo-container img {
+    height: 100%;
+}
+
+.logo {
+    box-sizing: border-box;
+    height: 10rem;
+    width: 100%;
+    padding: 2%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    background-color: rgba(0, 0, 0, 0.5);
+
+    position: absolute;
+    top: 25%;
+}
+
+.logo p {
+    color: white;
+    font-size: 7rem;
+}
+
+.background-credits {
+    color: white;
+    text-align: center;
+    position: relative;
+    bottom: 20px;
+}
+
+.background-credits a {
+    color: inherit;
+}
