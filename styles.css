@@ -20,13 +20,107 @@ html {
 body {
     height: 100%;
     width: 100%;
-    background-color: grey;
     display: flex;
+    font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
-
+/* Sign-Up section styles */
 .sign-up {
+    background-color: #f9fafb;
     flex: 1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.sign-up > div {
+    height: 20%;
+}
+
+.call-to-action {
+    font-weight: bold;
+    font-size: 2rem;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.call-to-action p + p {
+    margin-top: 2%;
+}
+
+form {
+    background-color: white;
+    padding: 4% 10%;
+    border-top: 2px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-row {
+    margin-top: 16px;
+}
+
+.form-row>div+div{
+    margin-left: 10%;
+}
+
+.form-row div {
+    display: inline-block;
+    width: 300px;
+}
+
+.form-row label {
+    display: block;
+    font-weight: bold;
+    color: #505762;
+}
+
+.form-row input {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 2px solid #f0f1f3;
+}
+
+.hidden {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+    border: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.submit-button {
+    margin-left: 10%;
+    font-weight: bold;
+}
+
+.submit-button > label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    color: white;
+    background-color: #596d48;
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 16px;
+}
+
+.submit-button > p {
+    margin-top: 16px;
+    font-weight: normal;
+}
+
+.submit-button > p > a {
+    color: #596d48;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 /*  Logo section styles */
